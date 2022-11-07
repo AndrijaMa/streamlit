@@ -20,7 +20,7 @@ with st.sidebar:
     SF_USR = st.text_input('Snowflake user:')
     SF_PWD = st.text_input('Snowflake password:', type='password')
 
-    conn = {'ACCOUNT': SF_ACCOUNT,'USER': SF_USR,'PASSWORD': SF_PWD}     
+    conn = {'ACCOUNT': SF_ACCOUNT,'USER': SF_USR,'PASSWORD': SF_PWD}
             
     if st.button('Connect') or s.pressed_first_button:
                    
