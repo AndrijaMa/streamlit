@@ -1,0 +1,4 @@
+streamlit
+snowflake
+pandas
+numpy
