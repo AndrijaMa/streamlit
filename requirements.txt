@@ -1,1 +1,2 @@
+pip
 snowflake-snowpark-python==0.10.0
