@@ -27,7 +27,7 @@ with st.sidebar:
             session = Session.builder.configs(conn).create()
             s.pressed_first_button = True
 
-            if session != '':  
+            if session != '':
                 datawarehouse_list = session.sql("show warehouses;").collect()
                 datawarehouse_list =  pd.DataFrame(datawarehouse_list)
                 datawarehouse_list= datawarehouse_list["name"]
