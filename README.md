@@ -1,2 +1,2 @@
 # Streamlit app!
-Easy upload CSV files to Snowflake
+Easy way to upload CSV files to Snowflake
