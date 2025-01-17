@@ -1,0 +1,5 @@
+name: streamlit_test
+channels:
+- snowflake
+dependencies:
+- plotly
