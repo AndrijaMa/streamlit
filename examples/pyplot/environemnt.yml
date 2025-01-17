@@ -1,6 +1,0 @@
-name: plotlytest
-channels:
-- snowflake
-dependencies:
-- plotly
-- streamlit
