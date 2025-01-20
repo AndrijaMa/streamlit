@@ -1,0 +1,7 @@
+name: plotlytest1
+channels:
+  - snowflake
+dependencies:
+  - plotly
+  - numpy
+  - scipy
