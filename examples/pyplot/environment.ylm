@@ -3,3 +3,5 @@ channels:
   - snowflake
 dependencies:
   - plotly
+  - numpy
+  - scipy
