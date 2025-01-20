@@ -1,5 +1,5 @@
-name: plotlytest
+name: plotlytest1
 channels:
-- snowflake
+  - snowflake
 dependencies:
-- plotly
+  - plotly
