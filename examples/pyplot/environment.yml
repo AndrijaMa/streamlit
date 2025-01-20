@@ -5,5 +5,3 @@ dependencies:
   - plotly
   - numpy
   - scipy
-  - pandas
-  - scikit-learn
