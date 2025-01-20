@@ -1,22 +1,20 @@
-# Import necessary libraries
 import streamlit as st
-import pandas as pd
 import numpy as np
+import plotly.figure_factory as ff
 
-# Sample data creation
-data = {
-    'Month': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    'Sales': np.random.randint(100, 1000, size=12)
-}
-df = pd.DataFrame(data)
+# Add histogram data
+x1 = np.random.randn(200) - 2
+x2 = np.random.randn(200)
+x3 = np.random.randn(200) + 2
 
-# Streamlit app
-st.title('Monthly Sales Visualization')
+# Group data together
+hist_data = [x1, x2, x3]
 
-# Display the dataframe
-st.header('Sales Data')
-st.write(df)
+group_labels = ['Group 1', 'Group 2', 'Group 3']
 
-# Plotting the sales data
-st.header('Sales Chart')
-st.line_chart(df.set_index('Month'))
+# Create distplot with custom bin_size
+fig = ff.create_distplot(
+        hist_data, group_labels, bin_size=[.1, .25, .5])
+
+# Plot!
+st.plotly_chart(fig, use_container_width=True)
